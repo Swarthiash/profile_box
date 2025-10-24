@@ -1,0 +1,71 @@
+/* education.css – pastel theme with good contrast */
+
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f2f6f9; /* very light pastel blue */
+  color: #2c3e50; /* strong dark blue-gray for text */
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+/* Main container */
+.phy {
+  max-width: 800px;
+  margin: auto;
+  background: #ffffff; /* white card layer */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(44, 62, 80, 0.1);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Inner content */
+.int {
+  padding: 20px;
+}
+
+/* Headings */
+.int h1 {
+  font-size: 1.4rem;
+  color: #264653; /* deep teal accent for headings */
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Emojis before headings */
+.int h1::before {
+  content: "🔔";
+  margin-right: 8px;
+}
+
+/* Section separators */
+hr {
+  border: none;
+  border-top: 2px dotted #8ab6d6; /* pastel blue accent */
+  margin: 25px 0;
+}
+
+/* Smooth fade in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .phy { padding: 20px; }
+  .int h1 { font-size: 1.1rem; }
+}

@@ -1,0 +1,119 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.pop{
+    background-image: url("back1moon.jpg");
+}
+
+
+ 
+ body{
+    
+    background-color: bisque;
+
+ }
+
+.mainbox{
+  
+    display:flex ;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+}
+.newbox{
+  
+    height: 50rem;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+}
+
+.box1{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    
+    background-color:gray;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("educa.avif");
+    background-size: cover;
+}
+
+.box2{
+    height: 16rem;
+    width: 16rem;
+    background-color:gray;
+    opacity: 1;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-image: url("hobi.png");
+    background-size: cover;
+}
+
+.box3{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    background-color:gray;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images.jpeg");
+    background-size: cover;
+}
+
+.box4{
+    height: 20rem;
+    width: 20rem;
+    background-color:gray;
+    border-radius: 50%;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("sug.webp");
+    background-size: cover;
+}
+
+.box5{
+    height: 20rem;
+    width: 30rem;
+    border-radius: 100%;
+    background-color:gray;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("anime_photo.jpeg");
+    background-size: cover;
+}
+
+.box6{
+    height: 20rem;
+    width: 20rem;
+    background-color:gray;
+    opacity: 1;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-image: url("gam.jpg");
+    background-size: cover;
+
+}
+
+

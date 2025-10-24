@@ -1,0 +1,50 @@
+/* ===== Section fade-in on load or scroll ===== */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Image zoom + rotate on hover ===== */
+section img {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+section:hover img {
+  transform: scale(1.05) rotate(2deg);
+  filter: brightness(1.1);
+}
+
+/* ===== Text sliding overlay effect ===== */
+section .description {
+  position: relative;
+  overflow: hidden;
+}
+section .description p {
+  position: relative;
+  left: -100%;
+  transition: left 0.4s ease-in-out;
+}
+section:hover .description p {
+  left: 0;
+}
+
+/* ===== Grayscale-to-color effect ===== */
+section img.grayscale {
+  filter: grayscale(100%);
+}
+section:hover img.grayscale {
+  filter: grayscale(0);
+}
+
+/* ===== Border lift and shadow on hover ===== */
+section {
+  transition: box-shadow 0.3s ease, border-radius 0.3s ease;
+}
+section:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  border-radius: 8px;
+}
